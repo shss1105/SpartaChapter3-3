@@ -5,12 +5,16 @@ using UnityEngine;
 
 public class MouseToClick : MonoBehaviour
 {
-    [SerializeField] float speed = 10f;
+    [SerializeField] float speed = 2f;
     Vector3 mousePos, transPos, targetPos;
 
     // Start is called before the first frame update
 
     // Update is called once per frame
+    void Start()
+    {
+        targetPos = new Vector3(7.5f, 4, 0);
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -30,6 +34,6 @@ public class MouseToClick : MonoBehaviour
     }
     void MoveToTarget()
     {
-       transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime * speed);
+       transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * speed);
     }
 }
