@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class GridManager : Singleton<GridManager>
 {
-    // ±×¸®µå ³Êºñ, ³ôÀÌ
+    // ê·¸ë¦¬ë“œ ë„ˆë¹„, ë†’ì´
     [SerializeField] private int _width;
     [SerializeField] private int _height;
 
@@ -15,13 +15,12 @@ public class GridManager : Singleton<GridManager>
     [SerializeField] private Transform _cam;
 
     private Dictionary<Vector2, Tile> _tiles;
-    public bool isOnClick = false;
     private void Start()
     {
         _tiles = new Dictionary<Vector2, Tile>();
         GameManager.Instance.ChangeState(GameState.GenerateGrid);
     }
-    public void GenerateGrid() // ±×¸®µå »ı¼º
+    public void GenerateGrid() // ê·¸ë¦¬ë“œ ìƒì„±
     {
         for(int x = 0; x < _width; x++)
         {
