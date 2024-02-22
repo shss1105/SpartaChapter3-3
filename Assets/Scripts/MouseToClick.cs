@@ -17,19 +17,11 @@ public class MouseToClick : MonoBehaviour
     }
     void Update()
     {
-        if(GridManager.Instance.isOnClick == false) return;
-        else
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                CalTargetPos();
-
-            }
-
-            MoveToTarget();
-            GridManager.Instance.isOnClick = false;
+            CalTargetPos();
         }
-
+        MoveToTarget();
     }
 
 
