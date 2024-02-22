@@ -11,7 +11,6 @@ public abstract class Tile : MonoBehaviour
 
     public BaseUnit OccupiedUnit;
     public bool Walkable => _isWalkable && OccupiedUnit == null;
-    public float speed = 0.5f;
 
     public virtual void Init(int x, int y)
     {
