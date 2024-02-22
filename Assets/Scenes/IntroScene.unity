@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cba3c0c058898949973ac2c2688fe9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameState: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,10 +652,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCanvas: {fileID: 1446958307}
-  UI_List:
+  UIList:
   - {fileID: 8289689599860373864, guid: dd93208be23b2004498f219a27b78831, type: 3}
-  - {fileID: 6915620890485479615, guid: 2247d8f32ebfd504fa89dbd296d8d168, type: 3}
-  UI_Obj_List: []
+  UIObjList: []
 --- !u!4 &1471470077
 Transform:
   m_ObjectHideFlags: 0

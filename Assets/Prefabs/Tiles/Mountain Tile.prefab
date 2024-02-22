@@ -98,8 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a241b01cfd83ac8469c82c1cc2d5d777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TileName: "\uC0B0"
   _renderer: {fileID: 2107249141137346454}
   _hightlight: {fileID: 7924852217488436861}
+  _isWalkable: 0
+  OccupiedUnit: {fileID: 0}
 --- !u!1 &7924852217488436861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3954500716676260757, guid: bc8aea8870568ba46baf19730746dcca, type: 3}

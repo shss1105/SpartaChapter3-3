@@ -13,15 +13,22 @@ public class MouseToClick : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        targetPos = new Vector3(7.5f, 4, 0);
+
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(GridManager.Instance.isOnClick == false) return;
+        else
         {
-            CalTargetPos();
+            if (Input.GetMouseButtonDown(0))
+            {
+                CalTargetPos();
+
+            }
+
+            MoveToTarget();
+            GridManager.Instance.isOnClick = false;
         }
-        MoveToTarget();
 
     }
 

@@ -91,7 +91,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2bf90fc051e124cb22a9182adc6bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseColor: {r: 0.4392157, g: 0.7411765, b: 0.36862746, a: 1}
-  _offsetColor: {r: 0.4, g: 0.6901961, b: 0.33333334, a: 1}
+  TileName: "\uCD08\uC6D0"
   _renderer: {fileID: 5116316230813352858}
   _hightlight: {fileID: 4018343872979690097}
+  _isWalkable: 1
+  OccupiedUnit: {fileID: 0}
+  _baseColor: {r: 0.4392157, g: 0.7411765, b: 0.36862746, a: 1}
+  _offsetColor: {r: 0.4, g: 0.6901961, b: 0.33333334, a: 1}
