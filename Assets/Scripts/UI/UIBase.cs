@@ -14,12 +14,12 @@ public class UIBase : MonoBehaviour
         GameObject obj = Instantiate(gameObject, UIManager.Instance.mainCanvas.transform);
         obj.name = obj.name.Replace("(Clone)", "");
 
-        UIManager.Instance.UI_Obj_List.Add(obj.GetComponent<UIBase>());
+        UIManager.Instance.UIObjList.Add(obj.GetComponent<UIBase>());
     }
 
     public void Hide()
     {
-        UIManager.Instance.UI_Obj_List.Remove(this);
+        UIManager.Instance.UIObjList.Remove(this);
 
         Destroy(gameObject);
     }

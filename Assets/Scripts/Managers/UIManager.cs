@@ -29,14 +29,14 @@ public class UIManager : Singleton<UIManager>
 
     public Canvas mainCanvas;
 
-    public List<UIBase> UI_List = new List<UIBase>();
+    public List<UIBase> UIList = new List<UIBase>();
 
     [HideInInspector]
-    public List<UIBase> UI_Obj_List = new List<UIBase>();
+    public List<UIBase> UIObjList = new List<UIBase>();
 
     public void Show(string uiName)
     {
-        UIBase ui = UI_List.Find(obj => obj.name == uiName);
+        UIBase ui = UIList.Find(obj => obj.name == uiName);
 
         if (ui == null)
             return;
@@ -46,7 +46,7 @@ public class UIManager : Singleton<UIManager>
 
     public void Hide(string uiName)
     {
-        var ui = UI_Obj_List.Find(obj => obj.name == uiName);
+        var ui = UIObjList.Find(obj => obj.name == uiName);
 
         if (ui == null) return;
 
